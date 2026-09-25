@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Juan Giménez — Clínica de Medicina Estética</title>
+  <meta name="description" content="Clínica de medicina estética del Dr. Juan Giménez. Endolifting, Bótox, Ácido Hialurónico, Bioestimuladores y más. Solicita tu valoración gratuita.">
+  <meta name="theme-color" content="#0d6b5e">
+  <meta property="og:title" content="Dr. Juan Giménez — Medicina Estética">
+  <meta property="og:description" content="Solicita tu valoración gratuita. Tratamientos de Endolifting, Bótox, Ácido Hialurónico y más.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo" aria-label="Inicio">
+        <img src="assets/logo.jpg" alt="Centro de Estética Láser" class="header__logo-img">
+      </a>
+      <nav class="header__nav" id="mainNav" aria-label="Navegación principal">
+        <ul class="header__nav-list">
+          <li><a href="#servicios" class="header__nav-link">Tratamientos</a></li>
+          <li><a href="#doctor" class="header__nav-link">El Doctor</a></li>
+          <li><a href="#testimonios" class="header__nav-link">Opiniones</a></li>
+          <li><a href="#contacto" class="header__nav-link header__nav-link--cta">Valoración Gratuita</a></li>
+        </ul>
+      </nav>
+      <button class="header__burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-overlay"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__tag">Clínica de Medicina Estética</p>
+        <h1 class="hero__title">Tu belleza natural,<br><em>realzada con ciencia</em></h1>
+        <p class="hero__description">Tratamientos personalizados con las técnicas más avanzadas. Resultados naturales que respetan la armonía de tu rostro y cuerpo.</p>
+        <a href="#contacto" class="btn btn--primary btn--lg hero__cta" id="heroCta">
+          <span>Solicita tu Valoración Gratuita</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <p class="hero__trust">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Sin compromiso · 100% confidencial
+        </p>
+      </div>
+      <div class="hero__image-wrapper">
+        <img src="assets/doctor.jpg" alt="Dr. Juan Giménez, especialista en medicina estética" class="hero__image" width="480" height="480" loading="eager" fetchpriority="high">
+        <div class="hero__image-badge">
+          <span class="hero__badge-number">+25</span>
+          <span class="hero__badge-text">Años de experiencia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats" id="stats">
+    <div class="container stats__inner">
+      <div class="stats__item reveal">
+        <span class="stats__number" data-target="25">0</span>
+        <span class="stats__suffix">+</span>
+        <span class="stats__label">Años de experiencia</span>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item reveal">
+        <span class="stats__number" data-target="3000">0</span>
+        <span class="stats__suffix">+</span>
+        <span class="stats__label">Pacientes atendidos</span>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item reveal">
+        <span class="stats__number" data-target="500">0</span>
+        <span class="stats__suffix">+</span>
+        <span class="stats__label">Valoraciones positivas</span>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item reveal">
+        <span class="stats__number" data-target="6">0</span>
+        <span class="stats__suffix"></span>
+        <span class="stats__label">Tratamientos especializados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-header__tag">Nuestros Tratamientos</p>
+        <h2 class="section-header__title">Tratamientos a tu medida</h2>
+        <p class="section-header__desc">Cada tratamiento es personalizado según tus necesidades. Utilizamos las técnicas más innovadoras para conseguir resultados naturales y armónicos.</p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Service 1: Endolifting -->
+        <article class="service-card reveal" id="service-endolifting">
+          <div class="service-card__image-wrap">
+            <img src="assets/endolifting-facial.jpg" alt="Tratamiento de Endolifting Facial" class="service-card__image" loading="lazy" width="400" height="300">
+            <span class="service-card__badge">Más solicitado</span>
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Endolifting Facial y de Brazos</h3>
+            <p class="service-card__desc">Técnica mínimamente invasiva con láser que consigue tensar y rejuvenecer la piel sin cirugía. Resultados visibles desde la primera sesión.</p>
+            <a href="#contacto" class="btn btn--outline btn--sm service-card__cta">Pedir Valoración</a>
+          </div>
+        </article>
+
+        <!-- Service 2: Aumento de Labios -->
+        <article class="service-card reveal" id="service-labios">
+          <div class="service-card__image-wrap">
+            <img src="assets/aumento-labios.jpg" alt="Aumento de labios con ácido hialurónico" class="service-card__image" loading="lazy" width="400" height="300">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Aumento de Labios</h3>
+            <p class="service-card__desc">Labios más voluminosos y definidos con Ácido Hialurónico. Resultado natural que respeta las proporciones de tu rostro.</p>
+            <a href="#contacto" class="btn btn--outline btn--sm service-card__cta">Pedir Valoración</a>
+          </div>
+        </article>
+
+        <!-- Service 3: Bótox -->
+        <article class="service-card reveal" id="service-botox">
+          <div class="service-card__image-wrap">
+            <img src="assets/botox.jpg" alt="Tratamiento de Bótox facial" class="service-card__image" loading="lazy" width="400" height="300">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Bótox</h3>
+            <p class="service-card__desc">Elimina las líneas de expresión y previene nuevas arrugas. Procedimiento rápido con resultados que rejuvenecen tu mirada.</p>
+            <a href="#contacto" class="btn btn--outline btn--sm service-card__cta">Pedir Valoración</a>
+          </div>
+        </article>
+
+        <!-- Service 4: Bioestimuladores -->
+        <article class="service-card reveal" id="service-bioestimuladores">
+          <div class="service-card__image-wrap">
+            <img src="assets/bioestimuladores.jpg" alt="Bioestimuladores de colágeno" class="service-card__image" loading="lazy" width="400" height="300">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Bioestimuladores de Colágeno</h3>
+            <p class="service-card__desc">Con Ácido Poliláctico o Hidroxiapatita de Calcio. Estimulan la producción natural de colágeno para una piel más firme y joven.</p>
+            <a href="#contacto" class="btn btn--outline btn--sm service-card__cta">Pedir Valoración</a>
+          </div>
+        </article>
+
+        <!-- Service 5: Armonización Facial -->
+        <article class="service-card reveal" id="service-armonizacion">
+          <div class="service-card__image-wrap">
+            <img src="assets/armonizacion-facial.jpg" alt="Armonización facial con ácido hialurónico" class="service-card__image" loading="lazy" width="400" height="300">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Armonización Facial</h3>
+            <p class="service-card__desc">Equilibra las proporciones de tu rostro con Ácido Hialurónico. Resultados sutiles que resaltan tu belleza natural.</p>
+            <a href="#contacto" class="btn btn--outline btn--sm service-card__cta">Pedir Valoración</a>
+          </div>
+        </article>
+
+        <!-- Service 6: Marcación Mandíbula -->
+        <article class="service-card reveal" id="service-mandibula">
+          <div class="service-card__image-wrap">
+            <img src="assets/marcacion-mandibula.jpg" alt="Marcación de mandíbula para hombres" class="service-card__image" loading="lazy" width="400" height="300">
+            <span class="service-card__badge service-card__badge--alt">Hombres</span>
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Marcación de Mandíbula</h3>
+            <p class="service-card__desc">Definición y proyección mandibular masculina. Tratamiento exclusivo para hombres que buscan un perfil más definido y varonil.</p>
+            <a href="#contacto" class="btn btn--outline btn--sm service-card__cta">Pedir Valoración</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="why-us" id="por-que">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-header__tag">¿Por qué elegirnos?</p>
+        <h2 class="section-header__title">Tu confianza, nuestra prioridad</h2>
+      </div>
+      <div class="why-us__grid">
+        <div class="why-us__card reveal">
+          <div class="why-us__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3 class="why-us__card-title">Seguridad Certificada</h3>
+          <p class="why-us__card-desc">Todos los tratamientos realizados con productos de primera calidad y en un entorno clínico certificado.</p>
+        </div>
+        <div class="why-us__card reveal">
+          <div class="why-us__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
+          </div>
+          <h3 class="why-us__card-title">Resultados Naturales</h3>
+          <p class="why-us__card-desc">Nuestro enfoque prioriza la armonía y naturalidad. Nadie notará el tratamiento, solo tu mejor versión.</p>
+        </div>
+        <div class="why-us__card reveal">
+          <div class="why-us__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 class="why-us__card-title">Atención Personalizada</h3>
+          <p class="why-us__card-desc">Cada paciente es único. Diseñamos un plan de tratamiento exclusivo adaptado a tus objetivos y características.</p>
+        </div>
+        <div class="why-us__card reveal">
+          <div class="why-us__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="why-us__card-title">Tecnología Avanzada</h3>
+          <p class="why-us__card-desc">Equipamiento de última generación y técnicas innovadoras para los mejores resultados con mínima invasión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOCTOR ========== -->
+  <section class="doctor" id="doctor">
+    <div class="container doctor__inner">
+      <div class="doctor__image-col reveal">
+        <div class="doctor__image-frame">
+          <img src="assets/doctor.jpg" alt="Dr. Juan Giménez" class="doctor__image" loading="lazy" width="480" height="480">
+          <div class="doctor__image-accent"></div>
+        </div>
+      </div>
+      <div class="doctor__content reveal">
+        <p class="section-header__tag">Conóceme</p>
+        <h2 class="section-header__title">Dr. Juan Giménez</h2>
+        <p class="doctor__role">Doctor en Medicina y Cirugía</p>
+        <p class="doctor__bio">Graduado en la Facultad de Medicina de la Universidad Estatal de Guayaquil, con más de 25 años de experiencia. Formación especializada en cirugía estética láser y técnicas de rejuvenecimiento no invasivo con los mejores especialistas internacionales.</p>
+        <ul class="doctor__credentials">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            Doctor en Medicina y Cirugía
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            Entrenamiento láser y cirugía estética (Colombia)
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            Especialización internacional (EEUU, Argentina, Brasil)
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            Actualización continua en congresos internacionales
+          </li>
+        </ul>
+        <a href="#contacto" class="btn btn--primary btn--md">Reserva tu Consulta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-header__tag">Opiniones de Pacientes</p>
+        <h2 class="section-header__title">Lo que dicen nuestros pacientes</h2>
+      </div>
+      <div class="testimonials__grid">
+        <blockquote class="testimonial-card reveal" id="testimonial-1">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"El Dr. Giménez me hizo sentir muy cómoda desde la primera consulta. El resultado de mi armonización facial ha sido increíble, se ve completamente natural."</p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar">MC</div>
+            <div>
+              <cite class="testimonial-card__name">María C.</cite>
+              <span class="testimonial-card__treatment">Armonización Facial</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal" id="testimonial-2">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Tenía mucho miedo pero el doctor me explicó todo paso a paso. El endolifting me ha quitado años de encima. ¡No puedo estar más contenta!"</p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar">LR</div>
+            <div>
+              <cite class="testimonial-card__name">Laura R.</cite>
+              <span class="testimonial-card__treatment">Endolifting Facial</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal" id="testimonial-3">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Buscaba un cambio sutil en mi mandíbula y el resultado superó mis expectativas. Profesionalidad absoluta y un trato excepcional."</p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar">AG</div>
+            <div>
+              <cite class="testimonial-card__name">Alejandro G.</cite>
+              <span class="testimonial-card__treatment">Marcación Mandíbula</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA + FORM ========== -->
+  <section class="contact" id="contacto">
+    <div class="container contact__inner">
+      <div class="contact__info reveal">
+        <p class="section-header__tag">Valoración Gratuita</p>
+        <h2 class="section-header__title">Déjanos tus datos y te llamamos</h2>
+        <p class="contact__desc">Rellena el formulario y recibirás una llamada de nuestro equipo para agendar tu valoración gratuita y sin compromiso. Estudiaremos tu caso de forma personalizada.</p>
+        <div class="contact__benefits">
+          <div class="contact__benefit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Valoración 100% gratuita</span>
+          </div>
+          <div class="contact__benefit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Sin compromiso</span>
+          </div>
+          <div class="contact__benefit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Respuesta en menos de 24h</span>
+          </div>
+          <div class="contact__benefit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Plan personalizado para ti</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" id="leadForm" novalidate>
+        <div class="form__group">
+          <label for="form-name" class="form__label">Nombre completo *</label>
+          <input type="text" id="form-name" name="nombre" class="form__input" placeholder="Tu nombre y apellidos" required autocomplete="name">
+        </div>
+        <div class="form__group">
+          <label for="form-phone" class="form__label">Teléfono *</label>
+          <input type="tel" id="form-phone" name="telefono" class="form__input" placeholder="Ej: 612 345 678" required autocomplete="tel">
+        </div>
+        <div class="form__group">
+          <label for="form-email" class="form__label">Email</label>
+          <input type="email" id="form-email" name="email" class="form__input" placeholder="tu@email.com" autocomplete="email">
+        </div>
+        <div class="form__group">
+          <label for="form-service" class="form__label">¿Qué tratamiento te interesa? *</label>
+          <select id="form-service" name="tratamiento" class="form__input form__select" required>
+            <option value="" disabled selected>Selecciona un tratamiento</option>
+            <option value="Endolifting Facial y de Brazos">Endolifting Facial y de Brazos</option>
+            <option value="Aumento de Labios">Aumento de Labios con Ácido Hialurónico</option>
+            <option value="Bótox">Bótox</option>
+            <option value="Bioestimuladores de Colágeno">Bioestimuladores de Colágeno</option>
+            <option value="Armonización Facial">Armonización Facial con Ácido Hialurónico</option>
+            <option value="Marcación Mandíbula">Marcación de Mandíbula (Hombres)</option>
+            <option value="No estoy seguro/a">No estoy seguro/a — Quiero asesoramiento</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="form-message" class="form__label">Mensaje (opcional)</label>
+          <textarea id="form-message" name="mensaje" class="form__input form__textarea" placeholder="Cuéntanos brevemente qué te gustaría mejorar..." rows="3"></textarea>
+        </div>
+        <div class="form__group form__consent">
+          <input type="checkbox" id="form-consent" name="consentimiento" class="form__checkbox" required>
+          <label for="form-consent" class="form__label form__label--consent">Acepto la <a href="#" class="form__link">política de privacidad</a> y el tratamiento de mis datos para ser contactado/a.</label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg form__submit" id="formSubmit">
+          <span>Solicitar Valoración Gratuita</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <div class="form__success" id="formSuccess" hidden>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <h3>¡Solicitud enviada!</h3>
+          <p>Nos pondremos en contacto contigo en menos de 24 horas. ¡Gracias por confiar en nosotros!</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="header__logo">
+          <img src="assets/logo.jpg" alt="Centro de Estética Láser" class="header__logo-img footer__logo-img">
+        </div>
+        <p class="footer__tagline">Tu belleza natural, realzada con ciencia y profesionalidad.</p>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading">Tratamientos</h4>
+        <ul>
+          <li><a href="#service-endolifting">Endolifting</a></li>
+          <li><a href="#service-labios">Aumento de Labios</a></li>
+          <li><a href="#service-botox">Bótox</a></li>
+          <li><a href="#service-bioestimuladores">Bioestimuladores</a></li>
+          <li><a href="#service-armonizacion">Armonización Facial</a></li>
+          <li><a href="#service-mandibula">Marcación Mandíbula</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading">Contacto</h4>
+        <ul>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="https://wa.me/593986330299">+34 675 763 455</a>
+          </li>
+        </ul>
+        <div class="footer__address">
+          <strong>Clínica Salamanca</strong>
+          Calle de Ayala, 93. Bajo A.<br>Salamanca, 28006 Madrid.
+        </div>
+        <div class="footer__address">
+          <strong>Clínica Ciudad Lineal</strong>
+          Calle del General Aranaz, 51.<br>Ciudad Lineal, 28027 Madrid.
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Dr. Juan Giménez — Clínica de Medicina Estética. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MOBILE STICKY CTA ========== -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#contacto" class="btn btn--primary btn--lg mobile-cta__btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Valoración Gratuita
+    </a>
+  </div>
+
+  <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+  <a href="https://wa.me/593986330299" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
