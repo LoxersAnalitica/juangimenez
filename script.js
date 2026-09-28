@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // ===== GOOGLE SHEETS INTEGRATION =====
       // Replace this URL with your Google Apps Script Web App URL
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/a/macros/hitornalitica.com/s/AKfycbzzeJJEI0HF60O1eWuUiR3RfouVsY45bzFWDLFIv8vXKz1DWEZlMEvcBClcMVec3AI/exec';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/a/macros/hitornalitica.com/s/AKfycbxoTl0IFZ0dFM0TN6cIW1lXpl3OYTaQjG9CCJGOepM-lgk5G8ZHZ6F9G1ccwyDTe1hT/exec';
 
       if (GOOGLE_SCRIPT_URL) {
         try {
