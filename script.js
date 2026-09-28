@@ -147,16 +147,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // ===== GOOGLE SHEETS INTEGRATION =====
       // Replace this URL with your Google Apps Script Web App URL
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/a/macros/hitornalitica.com/s/AKfycbxoTl0IFZ0dFM0TN6cIW1lXpl3OYTaQjG9CCJGOepM-lgk5G8ZHZ6F9G1ccwyDTe1hT/exec';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/a/macros/hitornalitica.com/s/AKfycbzI0r5ydPfb15gxnvkj8Zeea-mtroOKz4ukKJ8M5dFvysm3JbmnlYWWjEwJsszygdqq/exec';
 
       if (GOOGLE_SCRIPT_URL) {
         try {
-          await fetch(GOOGLE_SCRIPT_URL, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-            body: JSON.stringify(formData),
+          // Hidden iframe + form approach (avoids all CORS issues)
+          let iframe = document.getElementById('gsheet-iframe');
+          if (!iframe) {
+            iframe = document.createElement('iframe');
+            iframe.id = 'gsheet-iframe';
+            iframe.name = 'gsheet-iframe';
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+          }
+
+          const hiddenForm = document.createElement('form');
+          hiddenForm.method = 'POST';
+          hiddenForm.action = GOOGLE_SCRIPT_URL;
+          hiddenForm.target = 'gsheet-iframe';
+          hiddenForm.style.display = 'none';
+
+          Object.entries(formData).forEach(([key, value]) => {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = value;
+            hiddenForm.appendChild(input);
           });
+
+          document.body.appendChild(hiddenForm);
+          hiddenForm.submit();
+          document.body.removeChild(hiddenForm);
         } catch (error) {
           console.warn('Error sending to Google Sheets:', error);
         }
