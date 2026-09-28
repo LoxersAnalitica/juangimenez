@@ -5,12 +5,12 @@
 
 /* ---------- CSS Custom Properties ---------- */
 :root {
-  /* Colors — Deep navy palette for luxury feel */
-  --primary: #14465e;
-  --primary-light: #1a5a7a;
-  --primary-dark: #0e3347;
-  --primary-50: rgba(20, 70, 94, 0.07);
-  --primary-100: rgba(20, 70, 94, 0.14);
+  /* Colors — Soft elegant blue palette */
+  --primary: #3a7ca5;
+  --primary-light: #4d93bd;
+  --primary-dark: #2d6484;
+  --primary-50: rgba(58, 124, 165, 0.07);
+  --primary-100: rgba(58, 124, 165, 0.14);
   --accent: #b8975a;
   --accent-light: #cead72;
   --accent-dark: #9a7d46;
@@ -151,16 +151,16 @@ ul { list-style: none; }
 
 .btn--primary {
   background: var(--primary);
-  color: var(--white);
+  color: var(--accent-light);
   border-color: var(--primary);
 }
 
 .btn--primary:hover {
   background: var(--primary-dark);
   border-color: var(--primary-dark);
-  color: var(--white);
+  color: var(--accent-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(20, 70, 94, 0.35);
+  box-shadow: 0 8px 25px rgba(58, 124, 165, 0.35);
 }
 
 .btn--outline {
