@@ -187,6 +187,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('ℹ️ Para enviar a Google Sheets, configura GOOGLE_SCRIPT_URL en script.js');
       }
 
+      // Track Meta Pixel Lead Event
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+
       // Show success message
       form.querySelectorAll('.form__group, .form__submit').forEach(el => {
         el.style.display = 'none';
@@ -215,6 +220,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (match) {
           select.value = match.value;
         }
+      }
+    });
+  });
+
+  // ===== WHATSAPP TRACKING =====
+  const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]');
+  whatsappLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact');
       }
     });
   });
