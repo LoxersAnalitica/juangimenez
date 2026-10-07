@@ -24,6 +24,11 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
+  // Desactiva la configuracion automatica de Meta (eventos inferidos por clic
+  // en botones). Sin esto, cualquier clic en un CTA con texto tipo "Solicita tu
+  // Valoracion" se envia como evento automatico y Meta lo clasifica como Lead,
+  // generando clientes potenciales falsos sin que nadie rellene el formulario.
+  fbq('set', 'autoConfig', false, '1823636065320507');
   fbq('init', '1823636065320507');
   fbq('track', 'PageView');
   </script>
